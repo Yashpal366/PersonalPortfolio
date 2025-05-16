@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with Meyawo landing page.">
     <meta name="author" content="Devcrud">
@@ -9,14 +10,32 @@
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
-	<link rel="stylesheet" href="assets/css/meyawo.css">
+    <link rel="stylesheet" href="assets/css/meyawo.css">
+
+    <script>
+        function openModal() {
+            document.getElementById('taskifyModal').style.display = 'block';
+        }
+        function closeModal() {
+            document.getElementById('taskifyModal').style.display = 'none';
+        }
+
+        // Optional: close modal when clicking outside content
+        window.onclick = function (event) {
+            var modal = document.getElementById('taskifyModal');
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
     <!-- Page Navbar -->
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="logo" href="#">🤦‍♂️</a>         
+            <a class="logo" href="#">🤦‍♂️</a>
             <ul class="nav">
                 <li class="item">
                     <a class="link" href="#home">Home</a>
@@ -33,10 +52,10 @@
             </ul>
             <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
                 <div class="hamburger-box">
-                  <div class="hamburger-inner"></div>
+                    <div class="hamburger-inner"></div>
                 </div>
             </a>
-        </div>          
+        </div>
     </nav><!-- End of Page Navbar -->
 
     <!-- page header -->
@@ -47,10 +66,10 @@
                 <span class="up">HI!</span>
                 <span class="down">I am Yashpal Rathore</span>
             </h1>
-            <p class="header-subtitle">QA & Automation Engineer</p>            
+            <p class="header-subtitle">QA & Automation Engineer</p>
 
             <!-- <button class="btn btn-primary">Visit My Works</button> -->
-        </div>              
+        </div>
     </header><!-- end of page header -->
 
     <!-- about section -->
@@ -60,99 +79,180 @@
             <!-- about wrapper -->
             <div class="about">
                 <div class="about-img-holder">
-                    <img src="assets/imgs/man.png" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    <img src="assets/imgs/man.png" class="about-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                 </div>
                 <div class="about-caption">
                     <p class="section-subtitle">Who Am I ?</p>
                     <h2 class="section-title mb-3">About Me</h2>
-                    <p class="text-lg md:text-xl leading-relaxed tracking-wide animate-fade-in-up hover:scale-[1.01] transition-transform duration-300 ease-in-out">
-                        I'm a passionate and versatile tech professional with a strong foundation in both 
-                        <span class="font-semibold text-indigo-600">manual and automated testing</span>, paired with 
-                        full-stack development expertise. With hands-on experience using tools like 
-                        <span class="font-semibold text-indigo-600">Selenium</span>, 
-                        <span class="font-semibold text-indigo-600">Playwright</span>, and 
-                        <span class="font-semibold text-indigo-600">Python</span>, I craft reliable, efficient test 
+                    <p
+                        class="text-lg md:text-xl leading-relaxed tracking-wide animate-fade-in-up hover:scale-[1.01] transition-transform duration-300 ease-in-out">
+                        I'm a passionate and versatile tech professional with a strong foundation in both
+                        <span class="font-semibold text-indigo-600">manual and automated testing</span>, paired with
+                        full-stack development expertise. With hands-on experience using tools like
+                        <span class="font-semibold text-indigo-600">Selenium</span>,
+                        <span class="font-semibold text-indigo-600">Playwright</span>, and
+                        <span class="font-semibold text-indigo-600">Python</span>, I craft reliable, efficient test
                         automation frameworks and ensure top-notch product quality.
                         <br /><br />
-                        On the development side, I bring ideas to life with 
-                        <span class="font-semibold text-indigo-600">Node.js</span>, 
-                        <span class="font-semibold text-indigo-600">React</span>, and 
-                        <span class="font-semibold text-indigo-600">React Native</span>, creating user-centric web and mobile 
-                        applications. I’m also experienced in 
-                        <span class="font-semibold text-indigo-600">cloud platforms (AWS)</span> and have set up multiple 
-                        <span class="font-semibold text-indigo-600">CI/CD pipelines</span> to streamline delivery and boost 
+                        On the development side, I bring ideas to life with
+                        <span class="font-semibold text-indigo-600">Node.js</span>,
+                        <span class="font-semibold text-indigo-600">React</span>, and
+                        <span class="font-semibold text-indigo-600">React Native</span>, creating user-centric web and
+                        mobile
+                        applications. I’m also experienced in
+                        <span class="font-semibold text-indigo-600">cloud platforms (AWS)</span> and have set up
+                        multiple
+                        <span class="font-semibold text-indigo-600">CI/CD pipelines</span> to streamline delivery and
+                        boost
                         productivity.
                         <br /><br />
-                        What sets me apart is my ability to bridge the gap between development and QA, ensuring seamless 
-                        collaboration, faster releases, and higher-quality code. I thrive in dynamic environments where learning 
+                        What sets me apart is my ability to bridge the gap between development and QA, ensuring seamless
+                        collaboration, faster releases, and higher-quality code. I thrive in dynamic environments where
+                        learning
                         never stops and impact matters.
                         <br /><br />
-                        <span class="text-xl font-bold text-indigo-700">Let’s build something meaningful together.</span>
-                      </p>
+                        <span class="text-xl font-bold text-indigo-700">Let’s build something meaningful
+                            together.</span>
+                    </p>
                     <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
-                </div>              
+                </div>
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
     </section> <!-- end of about section -->
 
-   <!-- Service Section -->
-<section class="section bg-gradient-to-br from-[#f8faff] to-[#e8f0ff]" id="service">
-    <div class="container text-center">
-        <p class="section-subtitle text-indigo-600 font-semibold text-lg">What I Do?</p>
-        <h2 class="section-title mb-12 text-4xl font-bold text-gray-800">My Skills</h2>
-        <!-- row -->
-        <div class="row flex flex-wrap justify-center gap-y-12">
-            <div class="col-md-6 col-lg-3 px-4">
-                <div class="service-card hover:shadow-xl transition-all duration-300 rounded-xl bg-white p-6">
-                    <div class="body">
-                        <img src="assets/imgs/pencil-case.svg" alt="manual testing icon" class="icon mx-auto mb-4 w-16 h-16">
-                        <h6 class="title text-xl font-semibold text-indigo-700 mb-2">Manual Testing</h6>
-                        <p class="subtitle text-gray-600 text-sm leading-relaxed">
-                            Writing and executing detailed test cases to ensure every part of the application works as expected with precision and clarity.
-                        </p>
+    <!-- Service Section -->
+    <section class="section bg-gradient-to-br from-[#f8faff] to-[#e8f0ff]" id="service">
+        <div class="container text-center">
+            <p class="section-subtitle text-indigo-600 font-semibold text-lg">What I Do?</p>
+            <h2 class="section-title mb-12 text-4xl font-bold text-gray-800">My Skills</h2>
+            <!-- row -->
+            <div class="row flex flex-wrap justify-center gap-y-12">
+                <div class="col-md-6 col-lg-3 px-4">
+                    <div class="service-card hover:shadow-xl transition-all duration-300 rounded-xl bg-white p-6">
+                        <div class="body">
+                            <img src="assets/imgs/pencil-case.svg" alt="manual testing icon"
+                                class="icon mx-auto mb-4 w-16 h-16">
+                            <h6 class="title text-xl font-semibold text-indigo-700 mb-2">Manual Testing</h6>
+                            <p class="subtitle text-gray-600 text-sm leading-relaxed">
+                                Writing and executing detailed test cases to ensure every part of the application works
+                                as expected with precision and clarity.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-md-6 col-lg-3 px-4">
-                <div class="service-card hover:shadow-xl transition-all duration-300 rounded-xl bg-white p-6">
-                    <div class="body">
-                        <img src="assets/imgs/analytics.svg" alt="automation icon" class="icon mx-auto mb-4 w-16 h-16">
-                        <h6 class="title text-xl font-semibold text-indigo-700 mb-2">Automation Engineering</h6>
-                        <p class="subtitle text-gray-600 text-sm leading-relaxed">
-                            Building scalable automation frameworks using Selenium, Playwright, and Python to reduce manual effort and improve release velocity.
-                        </p>
+                <div class="col-md-6 col-lg-3 px-4">
+                    <div class="service-card hover:shadow-xl transition-all duration-300 rounded-xl bg-white p-6">
+                        <div class="body">
+                            <img src="assets/imgs/analytics.svg" alt="automation icon"
+                                class="icon mx-auto mb-4 w-16 h-16">
+                            <h6 class="title text-xl font-semibold text-indigo-700 mb-2">Automation Engineering</h6>
+                            <p class="subtitle text-gray-600 text-sm leading-relaxed">
+                                Building scalable automation frameworks using Selenium, Playwright, and Python to reduce
+                                manual effort and improve release velocity.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-md-6 col-lg-3 px-4">
-                <div class="service-card hover:shadow-xl transition-all duration-300 rounded-xl bg-white p-6">
-                    <div class="body">
-                        <img src="assets/imgs/responsive.svg" alt="full stack icon" class="icon mx-auto mb-4 w-16 h-16">
-                        <h6 class="title text-xl font-semibold text-indigo-700 mb-2">Full Stack Development</h6>
-                        <p class="subtitle text-gray-600 text-sm leading-relaxed">
-                            Designing and developing dynamic web and mobile apps using Node.js, React, React Native, and Python with pixel-perfect frontends and robust APIs.
-                        </p>
+                <div class="col-md-6 col-lg-3 px-4">
+                    <div class="service-card hover:shadow-xl transition-all duration-300 rounded-xl bg-white p-6">
+                        <div class="body">
+                            <img src="assets/imgs/responsive.svg" alt="full stack icon"
+                                class="icon mx-auto mb-4 w-16 h-16">
+                            <h6 class="title text-xl font-semibold text-indigo-700 mb-2">Full Stack Development</h6>
+                            <p class="subtitle text-gray-600 text-sm leading-relaxed">
+                                Designing and developing dynamic web and mobile apps using Node.js, React, React Native,
+                                and Python with pixel-perfect frontends and robust APIs.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-md-6 col-lg-3 px-4">
-                <div class="service-card hover:shadow-xl transition-all duration-300 rounded-xl bg-white p-6">
-                    <div class="body">
-                        <img src="assets/imgs/toolbox.svg" alt="devops icon" class="icon mx-auto mb-4 w-16 h-16">
-                        <h6 class="title text-xl font-semibold text-indigo-700 mb-2">DevOps & Cloud</h6>
-                        <p class="subtitle text-gray-600 text-sm leading-relaxed">
-                            Creating and maintaining CI/CD pipelines, deploying scalable applications on AWS, and managing cloud infrastructure for reliable delivery.
-                        </p>
+                <div class="col-md-6 col-lg-3 px-4">
+                    <div class="service-card hover:shadow-xl transition-all duration-300 rounded-xl bg-white p-6">
+                        <div class="body">
+                            <img src="assets/imgs/toolbox.svg" alt="devops icon" class="icon mx-auto mb-4 w-16 h-16">
+                            <h6 class="title text-xl font-semibold text-indigo-700 mb-2">DevOps & Cloud</h6>
+                            <p class="subtitle text-gray-600 text-sm leading-relaxed">
+                                Creating and maintaining CI/CD pipelines, deploying scalable applications on AWS, and
+                                managing cloud infrastructure for reliable delivery.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div><!-- end of row -->
-    </div>
-</section>
+            </div><!-- end of row -->
+        </div>
+    </section>
     <!-- end of service section -->
+
+
+
+    <!-- portfolio section -->
+    <section class="section" id="portfolio">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Did ?</p>
+            <h6 class="section-title mb-6">Portfolio</h6>
+            <!-- row -->
+            <div class="row">
+                <!-- Portfolio Card -->
+                <!-- Modal -->
+                <div id="taskifyModal"
+                    style="display: none; position: fixed; z-index: 1000; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7);">
+                    <div
+                        style="background: white; max-width: 600px; margin: 10% auto; padding: 20px; border-radius: 8px; position: relative;">
+                        <span onclick="closeModal()"
+                            style="position: absolute; top: 10px; right: 15px; cursor: pointer; font-size: 20px;">&times;</span>
+                        <h2>Taskify – Task Management Web App</h2>
+                        <p>
+                            Taskify is a responsive and user-friendly task management web application built using
+                            <strong>React.js</strong> and <strong>Tailwind CSS</strong>. It allows users to <strong>sign
+                                up, log in</strong>, and manage their tasks efficiently. Users can <strong>add new
+                                tasks</strong>, view their task list, and <strong>delete tasks</strong> as needed. This
+                            project demonstrates key front-end skills like state management and responsive UI
+                            development.
+                        </p>
+          
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <a href="javascript:void(0)" class="portfolio-card">
+                        <img src="assets/imgs/taskify.png" height="220" class="portfolio-card-img" alt="Taskify Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Taskify – Task Management Web App</h4>
+                                <p class="font-weight-normal" onclick="openModal()">View Description</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <!-- <div class="col-md-6 col-lg-4 mb-4">
+                    <a href="javascript:void(0)" class="portfolio-card">
+                        <img src="assets/imgs/portfolio.png" class="portfolio-card-img" alt="Portfolio Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Portfolio – Personal Portfolio Website</h4>
+                                <p class="font-weight-normal">View Description</p>
+                            </span>
+                        </span>
+                    </a>
+            </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <a href="javascript:void(0)" class="portfolio-card">
+                        <img src="assets/imgs/portfolio.png" class="portfolio-card-img" alt="Portfolio Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Portfolio – Personal Portfolio Website</h4>
+                                <p class="font-weight-normal">View Description</p>
+                            </span>
+                        </span>
+                    </a> -->
+            <!-- </div> -->
+        </div><!-- end of container -->
+    </section>
+
+
     <!-- section -->
     <section class="section-sm bg-primary">
         <!-- container -->
@@ -163,9 +263,11 @@
                     <h6 class="title text-light">Want to work with me?</h6>
                     <p class="m-0 text-light">Always feel Free to Contact & Hire me</p>
                 </div>
+                <a href="#contact">
                 <div class="col-sm offset-sm-2 offset-md-3">
-                    <button class="btn btn-lg my-font btn-light rounded">Hire Me</button>
+                    <button class="btn btn-lg my-font btn-light rounded">Hire Me</button> 
                 </div>
+                </a>
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </section> <!-- end of section -->
@@ -179,25 +281,26 @@
             <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
                 <div class="form-row">
                     <div class="form-group col-sm-6">
-                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>                 
+                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>
                     </div>
                     <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" placeholder="Enter Email"requried>                 
+                        <input type="email" class="form-control" placeholder="Enter Email" requried>
                     </div>
                     <div class="form-group col-sm-12">
-                        <textarea name="comment" id="comment" rows="6"   class="form-control" placeholder="Write Something"></textarea>
+                        <textarea name="comment" id="comment" rows="6" class="form-control"
+                            placeholder="Write Something"></textarea>
                     </div>
                     <div class="form-group col-sm-12 mt-3">
-                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">                  
+                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
                     </div>
-                </div>  
+                </div>
             </form><!-- end of contact form -->
         </div><!-- end of container -->
     </section><!-- end of contact section -->
 
     <!-- footer -->
     <div class="container">
-        <footer class="footer">       
+        <footer class="footer">
             <p class="mb-0">Made with ❤️</a></p>
             <div class="social-links text-right m-auto ml-sm-auto">
                 <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
@@ -209,16 +312,17 @@
             </div>
         </footer>
     </div> <!-- end of page footer -->
-	
-	<!-- core  -->
+
+    <!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
     <!-- bootstrap 3 affix -->
-	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
 
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
 
 </body>
+
 </html>
