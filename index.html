@@ -19,6 +19,12 @@
         function closeModal() {
             document.getElementById('taskifyModal').style.display = 'none';
         }
+        function openModal1() {
+            document.getElementById('linkedinModal').style.display = 'block';
+        }
+        function closeModal1() {
+            document.getElementById('linkedinModal').style.display = 'none';
+        }
 
         // Optional: close modal when clicking outside content
         window.onclick = function (event) {
@@ -187,8 +193,6 @@
     </section>
     <!-- end of service section -->
 
-
-
     <!-- portfolio section -->
     <section class="section" id="portfolio">
         <div class="container text-center">
@@ -219,6 +223,25 @@
                         </a>
                     </div>
                 </div>
+                <div id="linkedinModal"
+                    style="display: none; position: fixed; z-index: 1000; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7);">
+                    <div
+                        style="background: white; max-width: 600px; margin: 10% auto; padding: 20px; border-radius: 8px; position: relative;">
+                        <span onclick="closeModal1()"
+                            style="position: absolute; top: 10px; right: 15px; cursor: pointer; font-size: 20px;">&times;</span>
+                        <h2>LinkedIn AI Post Generator App</h2>
+                        <p>
+                            LinkedIn AI Post Generator App is a responsive and user-friendly desktop application built
+                            using
+                            <strong>Python</strong>. It allows users to <strong>generate ai post content</strong>, and
+                            providing single click post ability</strong>.`
+                        </p>
+                        <a href="https://codecanyon.net/item/linkedin-ai-post-generator/58051607" target="_blank"
+                            onclick="closeModal1()" style="color: blue; text-decoration: underline;">
+                            View Linkedin AI Post Generator App
+                        </a>
+                    </div>
+                </div>
                 <div class="col-md-6 col-lg-4 mb-4">
                     <a href="javascript:void(0)" class="portfolio-card">
                         <img src="assets/imgs/taskify.png" height="220" class="portfolio-card-img"
@@ -227,6 +250,18 @@
                             <span class="portfolio-card-caption">
                                 <h4>Taskify – Task Management Web App</h4>
                                 <p class="font-weight-normal" onclick="openModal()">View Description</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <a href="javascript:void(0)" class="portfolio-card">
+                        <img src="assets/imgs/linkedin.jpg" height="220" class="portfolio-card-img"
+                            alt="LinkedIn AI Post Generator App Screen">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>LinkedIn AI Post Generator App</h4>
+                                <p class="font-weight-normal" onclick="openModal1()">View Description</p>
                             </span>
                         </span>
                     </a>
@@ -285,10 +320,10 @@
             <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
                 <div class="form-row">
                     <div class="form-group col-sm-6">
-                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>
+                        <input type="text" size="50" class="form-control" placeholder="Your Name">
                     </div>
                     <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" placeholder="Enter Email" requried>
+                        <input type="email" class="form-control" placeholder="Enter Email">
                     </div>
                     <div class="form-group col-sm-12">
                         <textarea name="comment" id="comment" rows="6" class="form-control"
@@ -302,17 +337,31 @@
         </div><!-- end of container -->
     </section><!-- end of contact section -->
 
+    <!-- Modal -->
+    <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center p-4">
+
+                <div class="modal-body">
+                    <p>Please email me at:</p>
+                    <h5><a href="mailto:yashpalrathore365@gmail.com">yashpalrathore365@gmail.com</a></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- footer -->
     <div class="container">
         <footer class="footer">
             <p class="mb-0">Made with ❤️</a></p>
             <div class="social-links text-right m-auto ml-sm-auto">
-                <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
+                <!-- <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a> -->
+                <a href="https://www.linkedin.com/in/yashpal-rathore-322917169" target="_blank" class="link"><i
+                        class="ti-linkedin"></i></a>
+                <!-- <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
                 <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a> -->
             </div>
         </footer>
     </div> <!-- end of page footer -->
@@ -328,5 +377,13 @@
     <script src="assets/js/meyawo.js"></script>
 
 </body>
+<script>
+    document.querySelector('.contact-form').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent actual form submission
+        var emailModal = new bootstrap.Modal(document.getElementById('emailModal'));
+        emailModal.show(); // Show the modal
+    });
+</script>
+
 
 </html>
